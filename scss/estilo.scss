@@ -1,11 +1,23 @@
-$primary-color:rgb(0, 0, 0);
+*{margin: 0; padding: 0;}
+
+$primary-color: rgb(0, 0, 0);
 $formato-name: bg-dark;
+$strong-text: x-large;
+$square-text: medium;
+
 
 #square {
-    background-color:$primary-color;
+    background-color: $primary-color;
 }
 
 #rectangular {
-    background-color:$formato-name;
+    background-color: $formato-name;
+}    
 
+#strong {
+    font-size:$strong-text;
 }
+
+.animate__animated.animate__fadeIn {
+    --animate-duration: 5s;
+  }
