@@ -17,4 +17,29 @@
 
 .animate__animated.animate__fadeIn {
   --animate-duration: 5s;
+}
+
+.animate__animated .animate__zoomIn {
+  --animate-duration: 1s;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.image-container {
+  text-align: center;
+  width: 100%;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }/*# sourceMappingURL=estilo.css.map */
