@@ -1,8 +1,9 @@
-*{margin: 0; padding: 0;}
+* {margin: 0; padding: 0;}
 
 $primary-color: rgb(0, 0, 0);
 $formato-name: bg-dark;
 $strong-text: x-large;
+$paragraph-align: center;
 $square-text: medium;
 
 
@@ -12,36 +13,67 @@ $square-text: medium;
 
 #rectangular {
     background-color: $formato-name;
-}    
+}
 
 #strong {
-    font-size:$strong-text;
+    font-size: $strong-text;
+}
+
+#paragraph{
+  text-align:$paragraph-align;
+  padding-top: 20px;
 }
 
 .animate__animated.animate__fadeIn {
     --animate-duration: 5s;
-  }
-    
-    .container {
-      width: 100%;
-      padding-right: 15px;
-      padding-left: 15px;
-      margin-right: auto;
-      margin-left: auto;
-    }
-    
-    .image-container {
-      text-align: center;
-      width: 100%;
-    }
-    
-    .links-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@keyframes img {
+    0% {
+        opacity: 0%;
     }
 
+    25% {
+        opacity: 25%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    75% {
+        opacity: 75%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.image-container {
+    text-align: center;
+    width: 100%;
+
+    .img_index {
+        animation-name: img;
+        animation-duration: 1s;
+    }
+
+}
 
 
+.links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

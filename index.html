@@ -18,7 +18,9 @@
     <!-- INICIO NAV -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top mb-5">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Sebastian Alfredo Portfolio</a>
+
+            <a class="navbar-brand d-flex justify-content-center" href="#">Sebastian Alfredo Portfolio</a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -48,18 +50,21 @@
     </nav>
     <!-- FIN NAV -->
 
+
+
     <!-- CONTENEDOR IMAGEN -->
-    <div class="image-container">
-        <img src="img/index.jpg" class="img pt-5 mt-5" alt="Person" max-width="100%" height="260px"
-            style="border-radius: 50%;">
-    </div>
+    <div class="container">
+        <div class="image-container">
+            <img src="img/index.jpg" class="img pt-5 mt-5 item img_index" alt="Persona" max-width="100%" height="260px"
+                style="border-radius: 50%;">
+        </div>
         <!-- FIN CONTENEDOR IMAGEN -->
 
         <div class="row pt-3 mt-3 text-center" style="font-size: x-large;">
             <strong>Bienvenido!</strong>
         </div>
-        
-        
+
+
         <!-- INICIO CUERPO -->
         <div class="row pt-2">
             <div class="col-4"></div>
@@ -73,10 +78,18 @@
             <h1 class="pt-2 pb-3 m-4 animate__animated animate__fadeInUp">Diseñador Grafico, Desarrollador Web y Social
                 Media</h1>
 
-            <a class="btn btn-success animate__animated animate__fadeInUp mb-5" href="portfolio.html" role="button">Ver
-                mi portfolio</a>
+            <div class="row">
+                <a href="#container_id"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                        fill="currentColor" class="bi bi-caret-down-square-fill text-success" viewBox="0 0 16 16">
+                        <path
+                            d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 4a.5.5 0 0 0-.374.832l4 4.5a.5.5 0 0 0 .748 0l4-4.5A.5.5 0 0 0 12 6H4z" />
+                    </svg></a>
+
+            </div>
+
         </div>
-        <!-- FIN HEADER -->
+
+        <!-- FIN CUERPO -->
 
         <!-- INICIO FOOTER -->
         <section class="deneb_cta">
@@ -84,13 +97,24 @@
                 <div class="cta_wrapper">
                     <div class="row">
                         <div class="col-sm-12 col-md-12 col-lg-12 pt-2 text-center bg-light">
-                            <div class="cta_content">
-                                <strong class="pt-3" id="strong">¿Tienes alguna idea en mente?</strong>
-                                <p>Escribeme y buscamos juntos soluciones a tus necesidades</p>
+                            <div class="cta_content" id="container_id">
+                                <div class="col pt-5 pb-5 d-none d-sm-none d-md-block">
+
+                                </div>
+
+                                <strong class="pt-5 mt-5" id="strong">¿Tienes alguna idea en mente?</strong>
+                                <p class="text-center" id="paragraph">Escribeme y buscamos juntos soluciones a tus necesidades</p>
                             </div>
                         </div>
-                        <div class="button_box pt-4 pb-5 text-center bg-light"> <a href="contacto.html"
+
+                        <div class="button_box pt-4 pb-5 text-center"> <a href="contacto.html"
                                 class="btn btn-warning">Contactame!</a>
+                        </div>
+
+                        <strong class="pt-1 mt-1 text-center" id="strong">¿Deseas ver mis practicas y trabajos?</strong>
+                        <p class="text-center" id="paragraph">puedes ver todo mi portfolio aca!</p>
+                        <div class="button_box pt-4 pb-5 text-center bg-light"> <a href="portfolio.html"
+                                class="btn btn-success">Ver mi portfolio</a>
                         </div>
                     </div>
                 </div>
@@ -127,6 +151,7 @@
                 <a class="text-white" href="https://google.cl"> SebastianAlfredoDW.cl</a>
             </div>
         </div>
+    </div>
     </div>
     <!-- FIN FOOTER -->
 
