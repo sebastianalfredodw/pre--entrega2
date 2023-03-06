@@ -1,1 +1,32 @@
-// 
+// medias queries 
+
+// vamos a ordenar por grid portfolio.html segun el dispositivo que se requiera
+// version smartphone
+@media (min-width:576px){
+    .gridPadre {
+        display: grid;
+        grid-template-areas: none 
+        // aca agregar el orden de la vaina
+        ;
+    }
+}
+
+// version tablet
+@media (min-width:768px){
+    .gridPadre {
+        display: grid;
+        grid-template-areas: none 
+        // aca agregar el orden de la vaina
+        ;
+    }
+}
+
+// version escritorio
+@media (min-width:1024px){
+    .gridPadre {
+        display: grid;
+        grid-template-areas: none 
+        // aca agregar el orden de la vaina        
+        ;
+    }
+}
