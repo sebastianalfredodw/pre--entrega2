@@ -1,55 +1,43 @@
-body {
-    margin: 0px;
-    text-align: center;
-  }
+@import "mediasq";
 
-@import "variable","keyframes","mediasq";
-
-#square {
-    background-color: $primary-color;
+.gridBody{
+    margin: 0;
+    padding: 0;
 }
 
-#rectangular {
-    background-color: $formato-name;
-}
+.sectionH {
+    grid-area: sectionH;
 
-#strong {
-    font-size: $strong-text;
-}
-
-#paragraph{
-  text-align:$paragraph-align;
-  padding-top: 20px;
-}
-
-.animate__animated.animate__fadeIn {
-    --animate-duration: 5s;
-}
-
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.image-container {
-    text-align: center;
-    width: 100%;
-
-    .img_index {
-        animation-name: img;
-        animation-duration: 1s;
+    h1 {
+        grid-area: h1;
     }
 
 }
 
+.sectionA {
+    grid-area: sectionA;
+}
 
-.links-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+.sectionB {
+    grid-area: sectionB;
+}
+
+.sectionC {
+    grid-area: sectionC;
+
+    figure {
+        grid-area: figure;
+    }
+}
+
+.sectionVideo {
+    grid-area: sectionVideo;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.animate__animated.animate__fadeIn {
+    --animate-duration: 5s;
 }

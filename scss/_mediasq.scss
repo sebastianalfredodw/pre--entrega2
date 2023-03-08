@@ -1,32 +1,42 @@
-// medias queries 
-
-// vamos a ordenar por grid portfolio.html segun el dispositivo que se requiera
-// version smartphone
-@media (min-width:576px){
-    .gridPadre {
+// MEDIAS QUERIES PORFOLIO.HTML
+// Version Smartphone
+@media (min-width: 576px){
+    .gridPadre{
         display: grid;
-        grid-template-areas: none 
-        // aca agregar el orden de la vaina
-        ;
+        grid-template-areas: 
+        "nav"
+        "sectionH"
+        "sectionA"
+        "sectionB"
+        "sectionC"
+        "footer"
+        }
+    }
+
+// Version Tablet
+@media (min-width: 768px){
+.gridPadre{
+    display: grid;
+    grid-template-areas: 
+    "nav nav"
+    "sectionH sectionH"
+    "sectionA sectionA"
+    "sectionB sectionB"
+    "sectionC sectionC"
+    "footer footer"
     }
 }
 
-// version tablet
-@media (min-width:768px){
-    .pbody {
+// Version Escritorio
+@media (min-width: 1024px){
+    .gridPadre{
         display: grid;
-        grid-template-areas: none 
-        // aca agregar el orden de la vaina
-        ;
+        grid-template-areas: 
+        "nav nav nav"
+        "sectionH sectionH"
+        "sectionA sectionA"
+        "sectionB sectionB"
+        "sectionC sectionC"
+        "footer footer"
+        }
     }
-}
-
-// version escritorio
-@media (min-width:1024px){
-    .gridPadre {
-        display: grid;
-        grid-template-areas: none 
-        // aca agregar el orden de la vaina        
-        ;
-    }
-}
